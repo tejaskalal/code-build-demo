@@ -11,7 +11,7 @@ phases:
       - docker build -t my-app .
 
       - echo tagging image
-      - docker tag my-app $DOCKER_USERNAME
+      - docker tag my-app $DOCKER_USERNAME/my-app
   post_build:
     commands:
       - echo pushing image to dockerhub
