@@ -7,7 +7,7 @@ env:
     IMAGE_TAG: latest
 
 phases:
-  pre-build:
+  pre_build:
     commands:
       - echo logging to Amazon ECR
       - ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
